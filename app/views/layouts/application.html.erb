@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:head).empty? ? "Parseint - Desenvolvimento Web | Mobile" : yield(:head) %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="/">
+				Logo
+			</a>
+		</div>
+
+		<div class="menu">
+		<ul class="nav nav-pills pull-right">
+		  <li class="<%= @active_page == 'inicio' ? 'active' : '' %>">
+		    <a href="/">Início</a>
+		  </li>
+		  <li class="<%= @active_page == 'produtos' ? 'active' : '' %>"><a href="/produtos">Produtos</a></li>
+		  <li class="<%= @active_page == 'sobre' ? 'active' : '' %>"><a href="/sobre">Sobre</a></li>
+		  <li class="<%= @active_page == 'contato' ? 'active' : '' %>"><a href="/contato">Contato</a></li>
+		</ul>
+		</div>
+
+	</div>
+</div>
+
+<div class="wrap">
+
+		<%= yield %>
+
+	<div id="push"></div>
+</div>
+
+<div id="footer">
+	<div class="container">
+		<p class="credit">Parseint - Desenvolvimento Web | Mobile</p>
+	</div>
+</div>
+
+
+ 
+
+</body>
+</html>

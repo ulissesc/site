@@ -1,0 +1,54 @@
+<% @active_page = 'sobre' %>
+
+<% content_for :head do %>
+  Sobre
+<% end %>
+
+
+<div class="banner featured">
+	<div class="container welcome">
+	<h1 class="title">Sobre a Parseint</h1>	
+	<h2>Quem somos?</h2>
+	
+	</div>
+</div>
+
+<div class="banner">
+	<div class="container">
+	<h4>
+		 Somos uma pequena empresa apaixonada por desenvolver software e principalmente entregar soluções. Temos como objetivo criar sistemas web e mobile.
+	</h4>
+	</div>
+</div>
+
+<div class="container container-padding">
+	<%= render :partial => "/layouts/flash", locals: { flash: flash }  %>
+	
+	<div class="row">
+		<div class="span4">
+			<h2>Nossa Visão</h2>
+			<p>Transformar a marca parseInt em sinônimo de agilidade e inovação na área de Desenvolvimento de Software.</p>
+		</div>
+
+		<div class="span4">
+			<h2>Nossa Missão</h2>
+			<p>A missão da ParseInt é seguir Metodologias Ágeis de Desenvolvimento de Software, focar nas funcionalidades tecnológicas, simplificar a vida das pessoas, melhorar o desempenho empresarial, reduzir custos e gerir produtos de qualidade.</p>
+		</div>
+
+		<div class="span4 well">
+		<h2>Onde fica?</h2>
+			<address>
+			 	<strong>Parseint Desenvolvimento de Sistemas Ltda</strong><br/><br/>
+			 	Av. Santo Fregonese, 1666, bairro Industrial<br/>
+			 	<strong>FINDEX/ACEFB</strong><br/>
+			 	Francisco Beltrão, PR<br/>
+			 	<abbr title="Telefone">Fone:</abbr> (46) 9111-7060
+			</address>
+
+		</div>
+
+
+	</div> 
+
+</div>
+

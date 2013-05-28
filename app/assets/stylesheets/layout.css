@@ -1,0 +1,134 @@
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    letter-spacing: -0.25px;
+    line-height: 45px;
+}
+
+.header{
+   background: none repeat scroll 0 0 #333333;
+    height: 86px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo a {
+    float: left;
+    margin: 26px 0 0;
+}
+
+.menu ul.nav li a {
+  padding: 52px 15px 20px;
+  border-radius: 0;
+  margin: 0;
+  transition: 1s;
+  -webkit-transition: 1s;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.menu ul.nav li a:focus, .menu ul.nav li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+
+/* Wrapper for page content to push down footer */
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+.banner {
+  background-color: #f5f5f5;
+  padding: 20px; 
+}
+
+.featured {
+  background-color: #E9E6E1;
+}
+.full-featured {
+  background-color: #D35400;
+  text-align: center;
+}
+
+.hue_block {
+    background-color: #E67E22;
+    color: #FFFFFF;
+    padding: 0 4px 2px;
+}
+
+.welcome h1.title{ 
+    font-size: 1.8em;
+}
+
+.depoimentos ol.carousel-indicators li{
+  background-color: #999999;
+}
+.depoimentos ol.carousel-indicators li.active{
+  background-color: #E67E22;
+}
+
+#push,
+#footer {
+  height: 60px;
+}
+#footer-old {
+  background-color: #f5f5f5;
+}
+#footer {
+  background-color: #333333;
+  color: #999999;
+}
+
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.container {
+  width: auto;
+  max-width: 980px;
+}
+.container-padding{
+  padding: 20px 0;
+}
+.container .credit {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.field_with_errors textarea,
+.field_with_errors input[type="text"],
+.field_with_errors input[type="password"],
+.field_with_errors input[type="datetime"],
+.field_with_errors input[type="datetime-local"],
+.field_with_errors input[type="date"],
+.field_with_errors input[type="month"],
+.field_with_errors input[type="time"],
+.field_with_errors input[type="week"],
+.field_with_errors input[type="number"],
+.field_with_errors input[type="email"],
+.field_with_errors input[type="url"],
+.field_with_errors input[type="search"],
+.field_with_errors input[type="tel"],
+.field_with_errors input[type="color"],
+.field_with_errors .uneditable-input {
+  border: 2px solid #E67E22;  
+}
+
+  
